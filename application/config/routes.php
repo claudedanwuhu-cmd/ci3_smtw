@@ -1,0 +1,37 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['default_controller'] = 'home';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+$route['admin'] = 'admin/auth';
+$route['admin/auth'] = 'admin/auth';
+$route['admin/auth/login'] = 'admin/auth/login';
+$route['admin/auth/logout'] = 'admin/auth/logout';
+$route['admin/dashboard'] = 'admin/dashboard';
+$route['admin/profil'] = 'admin/profil';
+$route['admin/guru'] = 'admin/guru';
+$route['admin/berita'] = 'admin/berita';
+$route['admin/pengumuman'] = 'admin/pengumuman';
+$route['admin/agenda'] = 'admin/agenda';
+$route['admin/prestasi'] = 'admin/prestasi';
+$route['admin/ekstrakurikuler'] = 'admin/ekstrakurikuler';
+$route['admin/fasilitas'] = 'admin/fasilitas';
+$route['admin/galeri'] = 'admin/galeri';
+$route['admin/download'] = 'admin/download';
+$route['admin/ppdb'] = 'admin/ppdb';
+$route['admin/user'] = 'admin/user';
+$route['admin/pengaturan'] = 'admin/pengaturan';
+$route['admin/carousel'] = 'admin/carousel';
+$route['profil'] = 'publicsite/profil';
+$route['berita'] = 'berita/index';
+$route['berita/detail/(:any)'] = 'berita/detail/$1';
+$route['guru'] = 'publicsite/module/guru';
+$route['prestasi'] = 'publicsite/module/prestasi';
+$route['pengumuman'] = 'publicsite/module/pengumuman';
+$route['agenda'] = 'publicsite/module/agenda';
+$route['ekstrakurikuler'] = 'publicsite/module/ekstrakurikuler';
+$route['fasilitas'] = 'publicsite/module/fasilitas';
+$route['galeri'] = 'publicsite/module/galeri';
+$route['download'] = 'publicsite/module/download';
+$route['ppdb'] = 'publicsite/module/ppdb';
