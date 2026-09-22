@@ -9,6 +9,7 @@ $route['admin/auth'] = 'admin/auth';
 $route['admin/auth/login'] = 'admin/auth/login';
 $route['admin/auth/logout'] = 'admin/auth/logout';
 $route['admin/dashboard'] = 'admin/dashboard';
+$route['admin/panduan'] = 'admin/panduan';
 $route['admin/profil'] = 'admin/profil';
 $route['admin/guru'] = 'admin/guru';
 $route['admin/berita'] = 'admin/berita';

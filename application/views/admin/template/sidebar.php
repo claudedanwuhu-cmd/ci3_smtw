@@ -40,6 +40,14 @@ function is_active($current, $segment) {
                     </a>
                 </li>
 
+                <li class="menu-item <?= is_active($current, 'panduan'); ?>">
+                    <a href="<?= site_url('admin/panduan'); ?>">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>Panduan Web</span>
+                        <span class="menu-new-badge">BARU</span>
+                    </a>
+                </li>
+
                 <li class="menu-title">Sekolah</li>
 
                 <li class="menu-item <?= is_active($current, 'profil'); ?>">
@@ -203,6 +211,18 @@ function is_active($current, $segment) {
 .sidebar-wrapper-top {
     display: flex;
     flex-direction: column;
+
+.menu-new-badge {
+    width: auto;
+    margin-left: auto;
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: #cffafe;
+    background: rgba(6, 182, 212, 0.2);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
     height: calc(100vh - 75px);
     overflow-y: auto;
     overflow-x: hidden;

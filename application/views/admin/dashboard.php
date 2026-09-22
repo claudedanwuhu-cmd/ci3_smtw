@@ -43,6 +43,19 @@
             </div>
         </div>
 
+        <!-- PANDUAN ONBOARDING -->
+        <div class="guide-alert mb-4">
+            <div class="guide-alert-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="guide-alert-copy">
+                <span class="guide-kicker">Mulai dari sini</span>
+                <h5>Kenalan dulu dengan ruang kerja admin?</h5>
+                <p>Panduan singkat dan lengkap untuk mengelola isi website sekolah tanpa tersesat di tengah jalan.</p>
+            </div>
+            <a href="<?= site_url('admin/panduan'); ?>" class="guide-alert-button">
+                Buka Panduan <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+
         <!-- STATS CARDS GRID -->
         <div class="row g-3 mb-4">
             <?php 
@@ -323,6 +336,43 @@
     overflow: hidden;
     box-shadow: 0 20px 40px -15px rgba(2, 132, 199, 0.35);
 }
+
+.guide-alert {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 18px;
+    background: linear-gradient(105deg, rgba(255, 251, 235, 0.96), rgba(255, 247, 237, 0.84));
+    box-shadow: 0 10px 28px rgba(245, 158, 11, 0.08);
+}
+.guide-alert-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 48px;
+    border-radius: 14px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #f59e0b, #ea580c);
+    font-size: 19px;
+    box-shadow: 0 8px 18px rgba(234, 88, 12, 0.22);
+}
+.guide-alert-copy { flex: 1; min-width: 0; }
+.guide-kicker { color: #b45309; font-size: 10px; font-weight: 800; letter-spacing: 1.3px; text-transform: uppercase; }
+.guide-alert h5 { margin: 2px 0 3px; color: #78350f; font-size: 15px; font-weight: 800; }
+.guide-alert p { margin: 0; color: #92400e; font-size: 12px; line-height: 1.5; }
+.guide-alert-button {
+    display: inline-flex; align-items: center; gap: 9px; white-space: nowrap;
+    padding: 11px 15px; border-radius: 11px; color: #ffffff; background: #c2410c;
+    font-size: 12px; font-weight: 800; text-decoration: none; transition: transform .2s ease, background .2s ease;
+}
+.guide-alert-button:hover { color: #ffffff; background: #9a3412; transform: translateY(-2px); }
+[data-theme="dark"] .guide-alert, body.dark-mode .guide-alert { background: linear-gradient(105deg, rgba(67, 42, 11, .55), rgba(69, 32, 12, .5)); border-color: rgba(245, 158, 11, .3); }
+[data-theme="dark"] .guide-alert h5, body.dark-mode .guide-alert h5 { color: #fef3c7; }
+[data-theme="dark"] .guide-alert p, body.dark-mode .guide-alert p { color: #fde68a; }
+@media (max-width: 575.98px) { .guide-alert { align-items: flex-start; flex-wrap: wrap; } .guide-alert-button { margin-left: 66px; } }
 
 .welcome-orb {
     position: absolute;
